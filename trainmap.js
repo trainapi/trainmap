@@ -96,6 +96,38 @@ function drawMap(id, json)
 
 }
 
+function drawStation(id, json)
+{
+    var uluru = {lat: -25.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById(id), {
+        zoom: 10,
+        center: {lat: json.coords.lat, lng: json.coords.long},
+        //center: uluru
+    });
+
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(json.coords.lat, json.coords.long),
+        icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillOpacity: 0.8,
+            fillColor: '#ff0000',
+            strokeOpacity: 1.0,
+            // strokeColor: '#fff000',
+            strokeWeight: 1.0,
+            scale: 10 //pixels
+        },
+        map: map
+    });
+
+    /*
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+  });*/
+
+
+}
+
 
     /*
 
