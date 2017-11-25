@@ -1,4 +1,4 @@
-function drawMap(id, json)
+function drawMap(key, id, json)
 {
-
+    // console.log(key);
 }

@@ -2,7 +2,14 @@
 <body>
 <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="trainmap.js"></script>
+<!-- key.js contains API_KEY variable definition -->
+<script type="text/javascript" src="key.js"></script>
 
+<script type="text/javascript"><!--
+
+document.writeln("<script async defer src='https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&amp;callback=initMap'></script>");
+
+--></script>
 <div id="map">
 </div>
 
