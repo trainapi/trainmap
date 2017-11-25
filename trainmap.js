@@ -30,7 +30,7 @@ function drawMap(id, json)
         var long = stop["longitude"];
         var lat = stop["latitude"];
 
-        if (long && lat)
+        if (long && lat && stop["stop_id"] != 380451)
         {
             poly.push({lat:lat, lng:long});
             if (stop["stops"])
