@@ -1,0 +1,4 @@
+function drawMap(id, json)
+{
+
+}
